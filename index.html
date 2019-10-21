@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>word (character) guess</title>
+
+    <link rel ="stylesheet" type= "text/css" href="/assets/css/style.css"/>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+</head>
+
+<body>
+
+        <div class="container">
+                  <div class="jumbotron">
+                  <div class="container">
+                    <h1>Marvel Character Hangman!</h1>
+                    <h6>Click any letter to begin!</h6>
+                  </div>
+                </div>
+
+                <div class="row">
+                        <div class="col-lg-12">
+
+
+<!-- row one -->
+  <div class="row">
+      <div class="rowTop">
+        <h4 class="rowGuess">Word to Guess</h4>
+      </div>
+      <div class="row-body">
+       
+        <!-- Pay particular attention to the id called ***wordblanks***. We'll be referencing this in the JavaScript. -->
+<!-- row one also -->
+        <h3 id="word-blanks">_ _ _ _ _ _ _ _ _ </h3>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="row-body">
+
+<!-- row two -->
+          <h3>Wrong Letters:</h3> <span id="wrongLetters"></span>
+
+          </div>
+          </div>
+
+  <div class="row">
+  <div class="row-body">
+
+						<!-- Pay attention to the id called ****guessesLeft****. We'll be referencing this in the JavaScript. -->
+            <h3># of Guesses Left: </h3><span id="#Left">10</span>
+          </div>
+        </div>
+  
+   <!-- Fourth card: Holds the number of Wins. -->
+   <div class="row">
+      <div class="row-body">
+
+        <!-- This span called winCounter is where we'll be dumping the number of wins.
+        Pay attention to the id called ****winCounter***. We'll be referencing this in the JavaScript. -->
+        <h3># of Wins: </h3> <span id="#Wins">0</span>
+      </div>
+    </div>
+
+    <!-- Fifth card: Holds the number of Losses. -->
+    <div class="row">
+      <div class="row-body">
+
+        <!-- This span called winCounter is where we'll be dumping the number of wins.
+        Pay attention to the id called ****winCounter***. We'll be referencing this in the JavaScript. -->
+        <h3># of Losses: </h3> <span id="#Losses">0</span>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<script src="/assets/javascript/game.js"></script>  
+    
+  
+</body>
+</html>
